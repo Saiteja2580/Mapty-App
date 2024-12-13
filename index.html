@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script defer src="script.js"></script>
+    <title>Mapty App</title>
+  </head>
+  <body>
+    <div class="app--container--outer">
+      <div class="app-container-inner">
+        <div class="app--sidebar app">
+          <div class="app--workout--logo">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Mapty</span>
+          </div>
+          <div>
+            <ul class="sidebar--workout--list">
+              <form action="" class="app--sidebar--workout--form form hidden">
+                <div class="form-input">
+                  <label for="type">Type</label>
+                  <select name="type" id="type" class="input-type">
+                    <option value="Running">Running</option>
+                    <option value="Cycling">Cycling</option>
+                  </select>
+                </div>
+                <div class="form-input">
+                  <label for="distance">Distance</label>
+                  <input
+                    id="distance"
+                    type="text"
+                    placeholder="km"
+                    class="input-distance"
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="duration">Duration</label>
+                  <input
+                    type="text"
+                    id="duration"
+                    placeholder="min"
+                    class="input-duration"
+                  />
+                </div>
+                <div class="form-input form-input-cadence">
+                  <label for="cadence">Cadence</label>
+                  <input
+                    type="text"
+                    id="cadence"
+                    placeholder="step/min"
+                    class="input-cadence"
+                  />
+                </div>
+                <div class="form-input hidden form-input-elevation">
+                  <label for="elevation">Elevation</label>
+                  <input
+                    type="text"
+                    id="elevation"
+                    placeholder="meters"
+                    class="input-elevation"
+                  />
+                </div>
+                <button type="submit" class="hidden">Submit</button>
+              </form>
+            </ul>
+          </div>
+          <div class="app--sidebar--footer">
+            <span>
+              "Mapty: Your partner in tracking and conquering every workout
+              milestone!"
+            </span>
+          </div>
+        </div>
+        <div class="app--map--container app"></div>
+      </div>
+    </div>
+    <script src="ref.js"></script>
+  </body>
+</html>

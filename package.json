@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "leaflet.gridlayer.googlemutant": "^0.14.1"
+  }
+}
