@@ -1,5 +1,16 @@
 {
-  "dependencies": {
-    "leaflet.gridlayer.googlemutant": "^0.14.1"
+  "name": "mapty-app",
+  "version": "1.0.0",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.2"
   }
 }
